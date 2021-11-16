@@ -10,7 +10,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(require('./routes'));
 
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/friend-network', {
-    useFindAndModify: false,
+    //useFindAndModify: false,
     useNewUrlParser: true,
     useUnifiedTopology: true
 });
